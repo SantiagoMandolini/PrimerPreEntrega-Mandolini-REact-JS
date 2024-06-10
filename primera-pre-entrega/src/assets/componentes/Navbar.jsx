@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
-import logo from '../img/Logotipo.webp'; // Asegúrate de ajustar la ruta de la imagen según la estructura de tu proyecto
+import logo from '../img/Logotipo.webp'; 
 
 const Navbar = () => {
   return (
@@ -24,12 +24,12 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link btn-green" href="./pages/Ofertas.html">Ofertas</a>
+              <Link className="nav-link btn-green" to="/ofertas">Ofertas</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle btn-green" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle btn-green" to="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Productos
-              </a>
+              </Link>
               <ul className="dropdown-menu btn-green" aria-labelledby="navbarDropdownMenuLink">
                 <li><Link className="dropdown-item" to="/telefonos">Teléfonos</Link></li>
                 <li><Link className="dropdown-item" to="/consolas">Consolas</Link></li>
